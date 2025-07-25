@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact & To-Do Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <p id="errorMsg" class="error-message"></p>
+        </form>
+    </div>
+
+    <hr>
+    <div class="container todo-list-container">
+        <h2>My To-Do List</h2>
+        <div class="todo-input-group">
+            <input type="text" id="todoInput" placeholder="Add a new task..." aria-label="New task">
+            <button id="addTodoBtn">Add Task</button>
+        </div>
+        <ul id="todoList">
+            </ul>
+        <p id="todoErrorMsg" class="error-message"></p>
+    </div>
+    <footer>
+        <div class="container">
+            <p> ©To-Do List Application.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
